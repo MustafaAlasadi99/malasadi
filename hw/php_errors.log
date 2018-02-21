@@ -1,0 +1,27 @@
+[21-Feb-2018 16:51:13 UTC] PHP Parse error:  syntax error, unexpected 'player' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 11
+[21-Feb-2018 16:51:13 UTC] PHP Stack trace:
+[21-Feb-2018 16:51:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 16:51:16 UTC] PHP Parse error:  syntax error, unexpected 'player' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 11
+[21-Feb-2018 16:51:16 UTC] PHP Stack trace:
+[21-Feb-2018 16:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 16:51:16 UTC] PHP Parse error:  syntax error, unexpected 'player' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 11
+[21-Feb-2018 16:51:16 UTC] PHP Stack trace:
+[21-Feb-2018 16:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 16:51:17 UTC] PHP Parse error:  syntax error, unexpected 'player' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 11
+[21-Feb-2018 16:51:17 UTC] PHP Stack trace:
+[21-Feb-2018 16:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 16:51:17 UTC] PHP Parse error:  syntax error, unexpected 'player' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 11
+[21-Feb-2018 16:51:17 UTC] PHP Stack trace:
+[21-Feb-2018 16:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 16:51:17 UTC] PHP Parse error:  syntax error, unexpected 'player' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 11
+[21-Feb-2018 16:51:17 UTC] PHP Stack trace:
+[21-Feb-2018 16:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 17:47:32 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION), expecting '(' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 111
+[21-Feb-2018 17:47:32 UTC] PHP Stack trace:
+[21-Feb-2018 17:47:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 18:50:54 UTC] PHP Parse error:  syntax error, unexpected '' <div/>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 110
+[21-Feb-2018 18:50:54 UTC] PHP Stack trace:
+[21-Feb-2018 18:50:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0
+[21-Feb-2018 18:51:00 UTC] PHP Parse error:  syntax error, unexpected '' <div/>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/hw/hw2/inc/functions.php on line 110
+[21-Feb-2018 18:51:00 UTC] PHP Stack trace:
+[21-Feb-2018 18:51:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/hw/hw2/index.php:0

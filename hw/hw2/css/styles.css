@@ -1,0 +1,110 @@
+
+
+form {
+    
+    text-align:  center;
+    
+    
+}
+
+
+h1 { text-align: center;
+
+
+    color:white;
+
+
+}
+
+body {
+    
+    
+    background-color: black;
+    text-align: center;
+    
+    margin: 0 auto;
+    
+    width:50%; 
+
+    
+}
+
+
+
+#main {
+text-align: center;    
+
+    
+}
+
+#player1{
+    
+    display: inline-block;
+  
+    color:white;
+    
+    font-size: 2em;
+}
+
+
+#player2{
+    
+    display: inline-block;
+  
+    color:white;
+    
+    font-size: 2em;
+}
+
+
+
+#total{
+    
+    color:white;
+   
+   font-size: 1.5em;
+}
+ 
+#total2{
+    
+    color:white;
+    
+}
+
+
+#winner{
+    
+    color: yellow;
+    
+    font-size: 1.77em;
+    
+    
+    
+}
+
+
+
+#main{
+    
+    
+    border-width: thick;
+    
+    border-collapse: inherit;
+    
+    border: 2.5px solid orange;
+    
+    
+    
+}
+
+
+input{
+    
+    height:44px;
+    
+    width:120px;
+    
+    
+    
+    
+}
