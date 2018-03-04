@@ -1,0 +1,24 @@
+        if ($players[$i]=="Eli") {
+                for ($j=0;$j<11;$j++){
+                    echo "&nbsp; ";
+                 }
+        }
+        
+        if ($players[$i]=="Bianca") {
+                for ($j=0;$j<7;$j++){
+                    echo "&nbsp;";
+                }
+        }
+        
+        if ($players[$i]=="Juan") {
+                for ($j=0;$j<14;$j++){
+                    echo "&nbsp;" ;
+                }
+        }
+        
+        
+        if ($players[$i]=="Mustafa") {
+                for ($j=0;$j<1;$j++){
+                    echo "&nbsp;" ;
+                }
+        }

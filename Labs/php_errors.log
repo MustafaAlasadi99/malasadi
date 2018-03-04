@@ -1,2 +1,8 @@
 [12-Feb-2018 19:06:15 UTC] PHP Parse error:  syntax error, unexpected '"' width= '70'/>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/Labs/lab2/index.php on line 50
 [12-Feb-2018 19:06:17 UTC] PHP Parse error:  syntax error, unexpected '"' width= '70'/>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/malasadi/Labs/lab2/index.php on line 50
+[03-Mar-2018 18:26:30 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 63
+[03-Mar-2018 18:26:30 UTC] PHP Stack trace:
+[03-Mar-2018 18:26:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
+[03-Mar-2018 19:15:29 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 63
+[03-Mar-2018 19:15:29 UTC] PHP Stack trace:
+[03-Mar-2018 19:15:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
