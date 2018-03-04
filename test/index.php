@@ -10,11 +10,19 @@
                 text-align:center;
                 
                 margin: 0 auto;
-                
-                
                 padding-top: 10%;
                 
+                background-color: orange;
+                font-size:2.0em;
             }
+            
+            input{
+                
+                width: 300px;
+                
+                font-size:1.5em;
+            }
+            
             
             
         </style>
