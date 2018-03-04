@@ -76,7 +76,7 @@
         ?>
         
         <?php
-        echo "You are Fisitor number $counterVal to this site";
+        echo "Current number of Fisitors: $counterVal";
         ?>
         
         <br>  <br>  <br>
