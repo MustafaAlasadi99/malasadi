@@ -76,7 +76,7 @@
         ?>
         
         <?php
-        echo "You are visitor number $counterVal to this site";
+        echo "You are Fisitor number $counterVal to this site";
         ?>
         
         <br>  <br>  <br>
