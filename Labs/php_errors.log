@@ -6,3 +6,12 @@
 [03-Mar-2018 19:15:29 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 63
 [03-Mar-2018 19:15:29 UTC] PHP Stack trace:
 [03-Mar-2018 19:15:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
+[04-Mar-2018 06:23:38 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 111
+[04-Mar-2018 06:23:38 UTC] PHP Stack trace:
+[04-Mar-2018 06:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
+[04-Mar-2018 06:35:24 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 143
+[04-Mar-2018 06:35:24 UTC] PHP Stack trace:
+[04-Mar-2018 06:35:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
+[04-Mar-2018 06:54:49 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 143
+[04-Mar-2018 06:54:49 UTC] PHP Stack trace:
+[04-Mar-2018 06:54:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
