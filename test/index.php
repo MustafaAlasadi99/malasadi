@@ -71,15 +71,16 @@
 
 
 
-echo "You are visitor number $counterVal to this site";
-        
-        
+
         
         ?>
         
-        
+        <?php
+        echo "You are visitor number $counterVal to this site";
+        ?>
         
         <br>  <br>  <br>
+        
         
             <form>
                 <input type="submit" value="refresh"/>
