@@ -69,7 +69,7 @@
         
          <?php 
             
-            if (!isset($imageURLs)){
+            if (!isset($_GET['keyword'])){
                 echo "<h2> Type a Keyword to display a slideshow <br /> with random images from pixabay.com </h2>";
                 
             } 
@@ -125,12 +125,9 @@
                     echo "<li data-target='#carousel-example-generic' data-slide-to='$i'       ";
                     
                     
-                    //echo ($i==0) ? "class='active'" : "";
+                    echo ($i==0) ? " class='active'" : "";
                     
-                    if ($i==0){
-                        
-                        echo "class='active'";
-                    }
+               
                     
                     echo "></li>";
                     
@@ -152,7 +149,7 @@
                         }
                         while (!isset($imageURLs[$randomIndex]));
                         
-                        echo '<div class= "item '; 
+                        echo '<div class= "carousel-item'; 
                         
                     //    echo ($i==0) ? "active" : "";
                     
