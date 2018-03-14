@@ -72,13 +72,21 @@ if (isset($_POST["radio"]) &&   !empty($_POST["text"]) && isset($_POST["radio2"]
     <head>
         <meta charset="utf-8">
         <title> Hw 4 </title>
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+         
         <style>
         
+                  
             @import url("css/styles.css");
+             
             
         </style>
         
          <h3>SQL-QUIZ</h3>
+         
+         
     </head>
     
    
@@ -109,7 +117,7 @@ if (isset($_POST["radio"]) &&   !empty($_POST["text"]) && isset($_POST["radio2"]
                 
                    
                     
-                    <div id="Qs" > </div>
+                <div id="formData">    
                 
                 
                     <span id="question"> 1-Which of the following is not true about a FOREIGN KEY constraint?  </span> 
@@ -227,11 +235,11 @@ if (isset($_POST["radio"]) &&   !empty($_POST["text"]) && isset($_POST["radio2"]
                     
                     
                     
-                    
+                </div>    
              
              
                      
-                         <br> <br> 
+                         <br> 
                          
                     <div id= "score">     
                      <?php  if ($check==1){ echo  "Score: " ; echo $score; echo "/5" ;   }?>
