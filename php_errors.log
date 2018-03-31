@@ -23,3 +23,11 @@
 [10-Mar-2018 17:54:55 UTC] PHP Stack trace:
 [10-Mar-2018 17:54:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/practice/Untitled1.php:0
 [10-Mar-2018 17:54:55 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/malasadi/practice/Untitled1.php:44
+[28-Mar-2018 19:25:14 UTC] PHP Fatal error:  Unsupported operand types in /home/ubuntu/workspace/malasadi/test/index.php on line 67
+[28-Mar-2018 19:25:14 UTC] PHP Stack trace:
+[28-Mar-2018 19:25:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/test/index.php:0
+[28-Mar-2018 19:25:14 UTC] PHP   2. displayTable() /home/ubuntu/workspace/malasadi/test/index.php:124
+[28-Mar-2018 19:25:21 UTC] PHP Fatal error:  Unsupported operand types in /home/ubuntu/workspace/malasadi/test/index.php on line 67
+[28-Mar-2018 19:25:21 UTC] PHP Stack trace:
+[28-Mar-2018 19:25:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/test/index.php:0
+[28-Mar-2018 19:25:21 UTC] PHP   2. displayTable() /home/ubuntu/workspace/malasadi/test/index.php:124

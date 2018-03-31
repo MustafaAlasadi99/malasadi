@@ -15,3 +15,9 @@
 [04-Mar-2018 06:54:49 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/malasadi/Labs/lab4/index.php on line 143
 [04-Mar-2018 06:54:49 UTC] PHP Stack trace:
 [04-Mar-2018 06:54:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab4/index.php:0
+[31-Mar-2018 23:33:22 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php on line 18
+[31-Mar-2018 23:33:22 UTC] PHP Stack trace:
+[31-Mar-2018 23:33:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php:0
+[31-Mar-2018 23:33:22 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php:18
+[31-Mar-2018 23:37:29 UTC] PHP Warning:  Unterminated comment starting line 33 in /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php on line 33
+[31-Mar-2018 23:37:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php on line 53
