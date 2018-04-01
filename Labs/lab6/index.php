@@ -112,16 +112,26 @@ function displaySearchResults(){
 <html>
     <head>
         <title>Ottermart Product Search</title>
+        
+        <style>
+            
+             @import url("css/styles.css");
+             
+             
+        </style>
+        
+        
+        
     </head>
     
     
     
     <body>
         
-        <h1>Ottermart Product Search </h1>
+        <h1>Ottermart Product Search </h1>  <br>
 
 
-
+        <div id="form">    
         <form>
             
             Product: <input type="text" name="product"  /        >      <br>                 
@@ -150,19 +160,23 @@ function displaySearchResults(){
             <br>
             
             
-            <input type="submit" value="Search" name="searchForm"/>
+            <input type="submit" value="Search" name="searchForm" id="submit"/>
                    
         </form>
 
+
+        </div>
+        
+        
 
         <br>
         
         <hr>
         
-        
+        <div id="results">
         <?= displaySearchResults()?>
 
-        
+        </div>
 
     </body>
 </html>

@@ -45,9 +45,27 @@ foreach($records as $record){
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Purchase History </title>
+        
+        <style>
+            
+             @import url("css/styles2.css");
+             
+             
+        </style>
+        
+        
     </head>
+    
     <body>
+            
+                
+                
+                
+                
+            
+
 
     </body>
+    
 </html>
