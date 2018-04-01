@@ -12,7 +12,7 @@ $password = "elmaestro0";
 if(strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
    $host = $url["us-cdbr-iron-east-05.cleardb.net"];
-   $dbname = substr($url["path"], 1);
+   $dbname = substr($url["heroku_5b5b35991ee9557"], 1);
    $username = $url["b1462255794105"];
    $password = $url["1a71dff1"];
 }
