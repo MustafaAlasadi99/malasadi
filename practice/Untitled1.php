@@ -1,3 +1,45 @@
+<?php
+include 'db.php';
+
+$conn=getDatabaseConnection("project");
+
+
+global $conn;
+
+$sql="SELECT * FROM `movie_scifi` WHERE 1";
+
+$stmt=$conn->prepare($sql);
+$stmt->execute();
+$records=$stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//print_r($records);
+
+foreach($records as $record){
+    
+    echo $record["name"] . "----"  . $record["price"]   . "<br>";
+    
+}
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     
@@ -20,41 +62,6 @@
 
 
 
-        <?php
-            
-            $a=array("ten", "ace", "jack");
-            
-            
-            for ($i=0;$i<1;$i++){
-            echo " <img src = '../challenges/challenge2/img/cards/clubs/ten.png' /> " . "<br>" ;
-            
-            }
-
-        ?>
-
-
-
-
-
-
-
-<?php  
-    $request = 'http://local.yahooapis.com/MapsService/V1/mapImage?appid=YD-bGrhXEw_JXyniyYzf1l6_NzPNWbPu6Ey5Q--&street=701+First+Avenue&city=Sunnyvale&state=CA&output=php';  
-  
-    $response = file_get_contents($request);  
-  
-    if ($response === false) {  
-        die('Request failed');  
-    }  
-  
-    $phpobj = unserialize($response);  
-  
-    echo '<img src="'.$phpobj["Result"].'">';  
-?>  
-
-
-
-
 
 
 
@@ -63,7 +70,5 @@
 
 
 
-
-aa
 
 </html>
