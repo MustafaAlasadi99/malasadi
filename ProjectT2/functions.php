@@ -137,15 +137,64 @@ function displayResults(){
 
 
 
+        echo"<table class='table' > ";
+
+
         foreach($records as $record)
         {
+            
+            $itemName=$record['name'];
+            $itemPrice=$record['price'];
+            $itemImage=$record['img'];
+            $itemId=$record['Id'];
+            $itemDescription=$record['Description'];
+            $itemRating=$record['Rating'];
+            
+            
+            echo ' <tr>';
+            echo "<td>  <img src= '  img/".$record['img']."      '   width='100'>           </td>" ;
+            echo "<td> <h4>    $itemName     </h4>     </td>" ;
+            echo "<td> <h4> $ $itemPrice   </h4>          </td>" ;
+            
+            
+            
+            echo " <form method='post' > " ; 
+            echo"  <input type='hidden' name='itemName'  value='$itemName'      >              ";
+            echo"  <input type='hidden' name='itemId'  value='$itemId'      >              ";
+            echo"  <input type='hidden' name='itemImage'  value='$itemImage'      >              ";
+            echo"  <input type='hidden' name='itemPrice'  value='$itemPrice'      >              ";
+            
+            
+            if ($_POST['itemId']==$itemId)
+            {
+                
+                echo"  <td>     <button class='btn btn-success'>       Added             </button>        </td>     " ;
+            }
+            
+            else 
+            {
+            echo"  <td>     <button class='btn btn-warning'>           Add To Cart         </button>        </td>     " ;
+            }
+            
+            echo "<td> <a href=\"productInfo.php?Id=".$record["Id"]."\">More Info </a>  </td>";
+            
+            echo "</form>" ;
+            
+            
+                
     
-            echo $record["name"] . "----"  . $record["price"]  ."---" ; echo "<br>";
-            echo "<img src= '  img/".$record['img']."      '   width='100'>";   echo "<br>";
+            //echo $record["name"] . "----"  . $record["price"]  ."---" ; echo "<br>";
+            //echo "<img src= '  img/".$record['img']."      '   width='100'>";   echo "<br>";
+            
+            
+            
+            echo '</tr>' ;
+            
+            
         }
         
         
-        
+        echo "</table>";
         
     }
     
@@ -155,6 +204,76 @@ function displayResults(){
 
 
 
+function displayCartCount(){
+    
+    echo count($_SESSION['cart']);
+
+}
+
+function displayCartCount2(){
+    
+    return count($_SESSION['cart']);
+
+}
+
+
+function displayCart(){
+    
+    
+    
+        if (isset ($_SESSION['cart']))
+    {
+        echo "<table class='table' > ";
+        
+        foreach ($_SESSION['cart'] as $item){
+            
+            $itemName= $item['name'];
+            $itemPrice= $item['price'];
+            $itemImage= $item['image'];
+            $itemId= $item['id'];
+            $itemQuant=$item['quantity'];
+            
+            
+            
+            echo "<tr>";
+            echo "<td> <img src= '  img/".$item['image']."      '   width='100' height='120'>               </td>";
+            echo "<td>  <h4>    $itemName </h4>       </td>   ";
+            echo "<td>  <h4>    $itemPrice </h4>       </td>   ";
+            
+            
+            
+            
+            
+            
+            echo "</tr>";
+            
+            
+        }
+        
+        echo "</table> ";
+        
+        
+        
+        
+        if (displayCartCount2()>0) {
+         echo "<form method='post'> ";
+             echo"<input type='hidden' name='removeId'  >              ";
+            echo"  <td>     <button class='btn btn-danger'>     Remove All Items    </button>        </td>     " ;
+            echo "</form";
+        
+        }
+        
+        
+        else echo "cart is Empty";
+        
+        echo "<br>"; echo "<br>"; echo "<br>"; echo "<br>"; echo "<br>";
+        
+        
+    }
+    
+    
+    
+}
 
 
 ?>

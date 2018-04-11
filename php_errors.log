@@ -151,3 +151,9 @@ Stack trace:
 #1 /home/ubuntu/workspace/malasadi/ProjectT2/index.php(67): displayResults()
 #2 {main}
   thrown in /home/ubuntu/workspace/malasadi/ProjectT2/functions.php on line 91
+[06-Apr-2018 20:48:16 UTC] PHP Fatal error:  Call to undefined function displayCart() in /home/ubuntu/workspace/malasadi/ProjectT2/cart.php on line 95
+[06-Apr-2018 20:48:16 UTC] PHP Stack trace:
+[06-Apr-2018 20:48:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/ProjectT2/cart.php:0
+[06-Apr-2018 20:48:31 UTC] PHP Fatal error:  Call to undefined function displayCart() in /home/ubuntu/workspace/malasadi/ProjectT2/cart.php on line 95
+[06-Apr-2018 20:48:31 UTC] PHP Stack trace:
+[06-Apr-2018 20:48:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/ProjectT2/cart.php:0

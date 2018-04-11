@@ -1,5 +1,45 @@
 <?php
 include 'functions.php';
+session_start();
+
+
+if(!isset($_SESSION['cart'])){
+
+$_SESSION['cart']=array();
+
+}
+
+
+if(isset($_POST['itemName'])){    //if a new item has been added, then add it to cat
+    
+    $newItem=array();
+    $newItem['name']=$_POST['itemName'];
+    $newItem['id']=$_POST['itemId'];
+    $newItem['price']=$_POST['itemPrice'];
+    $newItem['image']=$_POST['itemImage'];
+    
+    
+    
+    foreach ($_SESSION['cart'] as &$item) {
+        if ($newItem['id']==$item['id']){
+            
+            $item['quantity'] +=1;
+            $found=true;
+            
+        }
+        
+        
+    }
+    
+    
+    if ($found!=true){
+        
+        $newItem['quantity']=1;
+        array_push($_SESSION['cart'],$newItem );
+    }
+    
+    
+}
 
 
 ?>
@@ -32,6 +72,37 @@ include 'functions.php';
     </head>
     
     <body>
+
+
+             <!-- Bootstrap Navagation Bar -->
+            <nav class='navbar navbar-default - navbar-fixed-top'>
+                <div class='container-fluid'>
+                    <div class='navbar-header'>
+                        <a class='navbar-brand' href='#'>Movie Catalog</a>
+                    </div>
+                    <ul class='nav navbar-nav'>
+                        <li><a href='index.php'>Home</a></li>
+                        
+                        <li><a href='cart.php'>
+                                 <span class='glyphicon-shopping-cart' aria-hidden='true' > </span>   
+                                 Cart:<?php displayCartCount();  ?>
+                             </a>
+                        
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+
+
+
+        <br> <br> <br>
+
+
+
+
 
             <!-- Search Form -->
             <form>
