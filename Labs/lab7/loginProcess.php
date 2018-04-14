@@ -4,7 +4,7 @@
 
     //print_r($_POST);  //displays values passed in the form
     
-    include '../../dbConnection.php';
+    include 'dbConnection.php';
     
     $conn = getDatabaseConnection("ottermart");
     

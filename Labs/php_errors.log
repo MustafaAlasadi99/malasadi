@@ -21,3 +21,26 @@
 [31-Mar-2018 23:33:22 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php:18
 [31-Mar-2018 23:37:29 UTC] PHP Warning:  Unterminated comment starting line 33 in /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php on line 33
 [31-Mar-2018 23:37:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/malasadi/Labs/lab6/purchaseHistory.php on line 53
+[14-Apr-2018 21:41:49 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 7
+[14-Apr-2018 21:41:49 UTC] PHP Stack trace:
+[14-Apr-2018 21:41:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:0
+[14-Apr-2018 21:41:49 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 7
+[14-Apr-2018 21:41:49 UTC] PHP Stack trace:
+[14-Apr-2018 21:41:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:0
+[14-Apr-2018 21:41:49 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 9
+[14-Apr-2018 21:41:49 UTC] PHP Stack trace:
+[14-Apr-2018 21:41:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:0
+[14-Apr-2018 21:44:00 UTC] PHP Warning:  include(dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 7
+[14-Apr-2018 21:44:00 UTC] PHP Stack trace:
+[14-Apr-2018 21:44:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:0
+[14-Apr-2018 21:44:00 UTC] PHP Warning:  include(): Failed opening 'dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 7
+[14-Apr-2018 21:44:00 UTC] PHP Stack trace:
+[14-Apr-2018 21:44:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:0
+[14-Apr-2018 21:44:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 9
+[14-Apr-2018 21:44:00 UTC] PHP Stack trace:
+[14-Apr-2018 21:44:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:0
+[14-Apr-2018 21:44:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ottermart.om_admin' doesn't exist' in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/malasadi/Labs/lab7/loginProcess.php on line 35

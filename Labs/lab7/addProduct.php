@@ -4,7 +4,7 @@ if(!isset( $_SESSION['adminName']))
 {
   header("Location:index.php");
 }
-include "../../dbConnection.php";
+include "dbConnection.php";
 $conn = getDatabaseConnection("ottermart");
 
 function getCategories() {
@@ -45,8 +45,40 @@ if (isset($_GET['submitProduct'])) {
 <html>
     <head>
         <title> Add a product </title>
+        <style>
+            
+              body{
+                
+                font-size:1.2em;
+                text-align:center;
+                background-image: url("img/3.jpg");
+                background-repeat: no-repeat;
+                color:white;
+                margin:0 auto;
+                
+            }
+              a{
+                 text-decoration:none;
+                 color:#cc0000;
+                }
+                
+                a{
+                 background-color:#cc0000;
+                 border:1px solid #660000;
+                 border-radius:5px;
+                 color:#fff;
+                 
+                 padding:2px 2px 2px 2px;
+                }
+            
+            
+        </style>
+        
+        
     </head>
     <body>
+        
+        <br> <br> <br>
         <h1> Add a product</h1>
         <form>
             Product name: <input type="text" name="productName"><br>
@@ -60,5 +92,13 @@ if (isset($_GET['submitProduct'])) {
             <input type="submit" name="submitProduct" value="Add Product">
             
         </form>
+        
+        <br> <br>
+        <div>
+            <a href="admin.php">Go Back</a>
+            
+        </div>
+        
+        
     </body>
 </html>
