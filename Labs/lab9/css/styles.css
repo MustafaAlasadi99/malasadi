@@ -42,3 +42,19 @@ body{
     color:white;
     background-image: url("../img/bg.jpg");
 }
+
+#passwordFeedback1{
+    color:red;
+    
+}
+
+#passwordFeedback2{
+    color:red;
+    
+}
+
+
+#zipCFeedback{
+    
+ color:red;   
+}
