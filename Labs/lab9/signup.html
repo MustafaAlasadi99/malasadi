@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AJAX: Sign Up Page</title>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+        
+            function validateForm() {
+                
+                var x = document.forms["myForm"]["pass1"].value;
+                var y = document.forms["myForm"]["pass2"].value;
+                
+                if (x == "") {
+                    $("#passwordFeedback1").html("missing field");
+                }
+                
+                else {
+                     $("#passwordFeedback1").html("");
+                }
+                
+                 if (y == "") {
+                    $("#passwordFeedback2").html("missing field");
+                }
+                
+                else {
+                    
+                     $("#passwordFeedback2").html("");
+                }
+                
+                if(x!="" && y!="" && x!=y )
+                {   $("#passwordFeedback1").html(""); $("#passwordFeedback2").html("");
+                
+                    $("#passwordFeedback1").html("Retype Password");
+                  //  alert(""); 
+                }
+                
+                 
+                if(x!="" && y!="" && x==y )
+                {   $("#passwordFeedback1").html(""); $("#passwordFeedback2").html("");
+                
+                  
+                }
+                
+                return false;
+           
+            }
+            
+        </script>
+        
+        <script>
+            
+            
+            $(document).ready( function(){
+                
+                //EVENTS
+                
+                $("#username").change( function(){ 
+                    //alert( $("#username").val() )
+                    
+                    $.ajax({
+
+                        type: "GET",
+                        url: "checkUsernameAPI.php",
+                        dataType: "json",
+                        data: { "username": $("#username").val() },
+                        success: function(data,status) {
+                             //alert(data);
+                             
+                             if (!data) {  //data == false
+                             
+                                //alert("Username is Available");
+                                $("#usernameFeedback").html("Username is Available");
+                                document.getElementById("usernameFeedback").style.color="green";
+                             } else {
+                                 
+                                //alert("Username is ALREADY TAKEN");
+                                
+                                $("#usernameFeedback").html("Username is ALREADY TAKEN");
+                                document.getElementById("usernameFeedback").style.color="red";
+                                
+                                 
+                             }
+                             
+                        
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                    }
+
+});//ajax
+                    
+                });
+                
+                $("#state").change( function () {
+                    //alert("hi")
+                    //alert( $("#state").val());
+                    
+                    $.ajax({
+
+                        type: "GET",
+                        url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                        dataType: "json",
+                        data: { "state": $("#state").val()},
+                        success: function(data,status) {
+                        //alert(data[0]['county']);
+                        //alert(data[0].county);
+                        $("#county").html("<option>Select One</option>");
+                        for(var i=0; i<data.length; i++)
+                        {
+                           $("#county").append("<option>" + data[i].county + "</option>"); 
+                        }
+                        
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                    });//ajax
+                    
+                    
+                });
+                
+                $("#zipCode").change( function(){  
+                    //alert( $("#zipCode").val() );
+                    
+                    $.ajax({
+                        type: "GET",
+                        url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                        dataType: "json",
+                        data: { "zip": $("#zipCode").val() },
+                        success: function(data,status) {
+                        
+                           //alert(data.city);
+                           if(!data){
+                               //alert("no zip code");
+                               $("#zipCFeedback").html("Zip code not found");
+                               $("#city").html(""); $("#latitude").html("");
+                            $("#longitude").html("");
+                           }
+                           else {
+                               $("#zipCFeedback").html("");
+                               
+                           $("#city").html(data.city);
+                            $("#latitude").html(data.latitude);
+                            $("#longitude").html(data.longitude);
+                           }
+                            
+                            
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                    });//ajax
+                    
+                } ); //#zipCode Event 
+
+
+                
+            } ); //documentReady
+            
+            
+        </script>
+        <style>
+        
+                  
+            @import url("css/styles.css");
+             
+            
+        </style>
+    </head>
+
+    <body>
+    
+       <h1> Sign Up Form </h1>
+        <span id="formContainer">
+        <form name="myForm" onsubmit="return validateForm()">
+            <fieldset>
+               <legend>Sign Up</legend>
+                First Name:  <input type="text"><br> 
+                Last Name:   <input type="text"><br> 
+                Email:       <input type="text"><br> 
+                Phone Number:<input type="text"><br><br>
+                Zip Code:    <input type="text" id="zipCode">   <span id="zipCFeedback"></span> <br>
+                City:        <span id="city"></span>
+                <br>
+                Latitude:    <span id="latitude"></span>
+                <br>
+                Longitude:    <span id="longitude"></span>
+                <br><br>
+                State:     
+                <select id="state">
+                    <option value="">Select One</option>
+                    <option value="ca"> California</option>
+                    <option value="ny"> New York</option>
+                    <option value="tx"> Texas</option>
+                    <option value="va"> Virginia</option>
+                </select><br />
+                
+                Select a County: <select id="county"></select><br>
+                
+                Desired Username: <input id="username" type="text"> <span id="usernameFeedback"></span> <br>
+                
+                Password: <input type="password" name="pass1" > <span id="passwordFeedback1"></span> <br>
+                
+                Type Password Again: <input type="password" name="pass2" > <span id="passwordFeedback2"></span><br>
+                <br>
+                <div id ="submitContainer"> 
+                <input type="submit" value="Sign up!" id= "submit" >
+                </div>
+                
+                
+                
+            </fieldset>
+        </form>
+        </span>
+        
+    </body>
+</html>
