@@ -18,7 +18,7 @@
 
 
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="index.html" style="font-size:1.5em;">Home</a>  
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="adminLogin.php">Administrate</a>
+        <a class="nav-link" href="adminLogin.php" style="font-size:1.5em;">Administrate</a>
       </li>
          
     </ul>
@@ -40,18 +40,18 @@
        <table class="table table-hover table-dark">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Title</th>
+                      <th scope="col">Year Published</th>
+                      <th scope="col">Price</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1</th>
+                      <th scope="row"><img src="https://images-na.ssl-images-amazon.com/images/I/61ydEdAVUfL._AA300_.jpg" alt="Mountain View"></th>
                       <td>Hacking: The Underground Guide to Computer Hacking, Including Wireless Networks, Security, Windows, Kali Linux, and Penetration Testing</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <td>2017</td>
+                      <td>$26.66</td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
