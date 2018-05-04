@@ -29,3 +29,7 @@ h2{
     color:black;
 }
 
+#bookImg {
+    width: 100%;
+    height: auto;
+}

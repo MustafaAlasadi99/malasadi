@@ -48,7 +48,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row"><img src="https://images-na.ssl-images-amazon.com/images/I/61ydEdAVUfL._AA300_.jpg" alt="Mountain View"></th>
+                      <th scope="row"><img id="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/61ydEdAVUfL._AA300_.jpg" alt="Mountain View"></th>
                       <td>Hacking: The Underground Guide to Computer Hacking, Including Wireless Networks, Security, Windows, Kali Linux, and Penetration Testing</td>
                       <td>2017</td>
                       <td>$26.66</td>
