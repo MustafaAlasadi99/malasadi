@@ -18,8 +18,7 @@ h2{
     display: inline;
 }
 
-#button{
+#userMain{
     
-    text-align:center;
-    margin: 0 auto;
+    padding-top:3%;
 }
