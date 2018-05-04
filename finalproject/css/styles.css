@@ -4,13 +4,7 @@
     
 }
 
-nav{
-    
-    text-align: center;
-    
-    margin: 0 auto;
-    
-}
+
 
 
 #otter{
@@ -22,4 +16,10 @@ nav{
 h2{
     
     display: inline;
+}
+
+#button{
+    
+    text-align:center;
+    margin: 0 auto;
 }
