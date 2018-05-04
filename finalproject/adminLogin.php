@@ -18,7 +18,7 @@
 
 
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="index.html" style="font-size:1.5em;">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="adminLogin.php">Administrate</a>
+        <a class="nav-link" href="adminLogin.php" style="font-size:1.5em;">Administrate</a>
       </li>
          
     </ul>
