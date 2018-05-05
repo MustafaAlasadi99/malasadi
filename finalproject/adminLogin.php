@@ -1,3 +1,20 @@
+<?php include('functions.php');
+
+
+if (isset($_POST['userName'])){
+  echo $_POST['userName'];
+ 
+  
+  
+  
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +43,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html" style="font-size:1.5em;">Home</a>
+        <a class="nav-link" href="index.php" style="font-size:1.5em;">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="adminLogin.php" style="font-size:1.5em;">Administrate</a>

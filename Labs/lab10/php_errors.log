@@ -1,0 +1,54 @@
+[05-May-2018 18:02:19 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:02:19 UTC] PHP Stack trace:
+[05-May-2018 18:02:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:02:19 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:02:19 UTC] PHP Stack trace:
+[05-May-2018 18:02:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:02:19 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 5
+[05-May-2018 18:02:19 UTC] PHP Stack trace:
+[05-May-2018 18:02:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:02:58 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:02:58 UTC] PHP Stack trace:
+[05-May-2018 18:02:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:02:58 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:02:58 UTC] PHP Stack trace:
+[05-May-2018 18:02:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:02:58 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 5
+[05-May-2018 18:02:58 UTC] PHP Stack trace:
+[05-May-2018 18:02:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:05:36 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:05:36 UTC] PHP Stack trace:
+[05-May-2018 18:05:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:05:36 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:05:36 UTC] PHP Stack trace:
+[05-May-2018 18:05:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:05:36 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 5
+[05-May-2018 18:05:36 UTC] PHP Stack trace:
+[05-May-2018 18:05:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:06:28 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:06:28 UTC] PHP Stack trace:
+[05-May-2018 18:06:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:06:28 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:06:28 UTC] PHP Stack trace:
+[05-May-2018 18:06:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:06:28 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 5
+[05-May-2018 18:06:28 UTC] PHP Stack trace:
+[05-May-2018 18:06:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:06:40 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:06:40 UTC] PHP Stack trace:
+[05-May-2018 18:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:06:40 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:06:40 UTC] PHP Stack trace:
+[05-May-2018 18:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:06:40 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 5
+[05-May-2018 18:06:40 UTC] PHP Stack trace:
+[05-May-2018 18:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:09:46 UTC] PHP Warning:  include(api/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:09:46 UTC] PHP Stack trace:
+[05-May-2018 18:09:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:09:46 UTC] PHP Warning:  include(): Failed opening 'api/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 3
+[05-May-2018 18:09:46 UTC] PHP Stack trace:
+[05-May-2018 18:09:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0
+[05-May-2018 18:09:46 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php on line 5
+[05-May-2018 18:09:46 UTC] PHP Stack trace:
+[05-May-2018 18:09:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/api/getPetInfo.php:0

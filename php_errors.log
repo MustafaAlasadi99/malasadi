@@ -157,3 +157,9 @@ Stack trace:
 [06-Apr-2018 20:48:31 UTC] PHP Fatal error:  Call to undefined function displayCart() in /home/ubuntu/workspace/malasadi/ProjectT2/cart.php on line 95
 [06-Apr-2018 20:48:31 UTC] PHP Stack trace:
 [06-Apr-2018 20:48:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/ProjectT2/cart.php:0
+[05-May-2018 06:48:42 UTC] PHP Fatal error:  Call to undefined function displayPublishers() in /home/ubuntu/workspace/malasadi/finalproject/user.php on line 59
+[05-May-2018 06:48:42 UTC] PHP Stack trace:
+[05-May-2018 06:48:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/user.php:0
+[05-May-2018 06:48:48 UTC] PHP Fatal error:  Call to undefined function displayPublishers() in /home/ubuntu/workspace/malasadi/finalproject/user.php on line 59
+[05-May-2018 06:48:48 UTC] PHP Stack trace:
+[05-May-2018 06:48:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/user.php:0
