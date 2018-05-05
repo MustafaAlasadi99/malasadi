@@ -68,3 +68,6 @@ h2{
     
 }
 
+input {
+   max-width: 100%; 
+}
