@@ -36,7 +36,10 @@
   </div>  
 </nav>
 <br>
-    
+
+
+    <div id ="table">  
+     
        <table class="table table-hover table-dark">
                   <thead>
                     <tr>
@@ -48,26 +51,27 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row"><img id="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/61ydEdAVUfL._AA300_.jpg" alt="Mountain View"></th>
-                      <td>Hacking: The Underground Guide to Computer Hacking, Including Wireless Networks, Security, Windows, Kali Linux, and Penetration Testing</td>
+                      <th scope="row"></th>
+                      <td>Hacking: The Underground Guide </td>
                       <td>2017</td>
                       <td>$26.66</td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
-                      <td>Jacob</td>
+                      <td>Hacking: Computer Hacking</td>
                       <td>Thornton</td>
                       <td>@fat</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
+                      <td >Larry the Bird</td>
+                      <td>@twitter</td>
                       <td>@twitter</td>
                     </tr>
                   </tbody>
         </table>
 
-
+    </div> 
 
       
 

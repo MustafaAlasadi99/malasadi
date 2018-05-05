@@ -5,28 +5,51 @@
 }
 
 
-
-
 #otter{
-    
     size: 10%;
-    
 }
 
 h2{
-    
     display: inline;
 }
 
 #userMain{
-    
     padding-top:3%;
 }
 
 
 
-
 #bookImg {
-    width: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+@media (min-width:480px)  {
+    
+    #bookImg {
+    max-width: 100%;
     height: auto;
+}
+    
+    
+}
+
+@media (min-width:320px)  { 
+     #bookImg {
+      max-width: 100%;
+      height: auto;
+}
+   
+}
+
+
+
+#table{
+    
+    width:50%;
+    
+    
+    margin: 0 auto;
 }
