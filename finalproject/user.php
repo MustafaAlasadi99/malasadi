@@ -35,6 +35,62 @@
     </ul>
   </div>  
 </nav>
+
+<div id="userMain"> 
+      
+      <div class="container form_div"> 
+              <div class="form-group row">
+                <label for="example-search-input" class="col-2 col-form-label">Title:</label>
+                <div class="col-7">
+                  <input class="form-control" type="search" value="" id="example-search-input">
+                </div>
+              </div>
+        
+        
+
+      
+      
+        <div class="form-group row">
+                <label for="example-search-input" class="col-2 col-form-label">Publisher:</label>
+                
+                <div class="col-7">
+                        <select class="form-control" id="exampleSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                      </select>
+                </div>
+        </div>
+      
+      
+      
+      
+      
+      
+          <div class="form-group row">
+                <label for="example-search-input" class="col-2 col-form-label">Year:</label>
+                
+                <div class="col-7">
+                        <select class="form-control" id="exampleSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                      </select>
+                </div>
+        </div>
+      
+        
+        
+        
+        
+      </div>
+
+
+
 <br>
 
 
@@ -51,7 +107,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row"></th>
+                      <th scope="row"><img id="bookImg" src="https://images-na.ssl-images-amazon.com/images/I/51i0IehrckL._AA300_.jpg"></th>
                       <td>Hacking: The Underground Guide </td>
                       <td>2017</td>
                       <td>$26.66</td>
@@ -73,7 +129,7 @@
 
     </div> 
 
-      
+  </div>    
 
         <hr>
         <div id="footer">

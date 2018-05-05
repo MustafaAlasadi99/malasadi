@@ -14,19 +14,19 @@ h2{
 }
 
 #userMain{
-    padding-top:3%;
+    padding-top:2%;
 }
 
 
 
-#bookImg {
+#bookImg { 
     width: 100px;
     height: 100px;
 }
 
 
 
-@media (min-width:480px)  {
+@media (min-width:480px)  { 
     
     #bookImg {
     max-width: 100%;
@@ -45,11 +45,11 @@ h2{
 }
 
 
-@media (min-width:1281px) {
+@media (min-width:1281px) {  
     
     #table{
     
-    width:50%;
+    width:30%;
     margin: 0 auto;
 }
     
@@ -57,4 +57,14 @@ h2{
 }
 
 
+
+@media (min-width:1281px) {  
+    
+  .form_div{
+    margin: 0 auto;
+    width:40% /* pc, form_user */
+}
+    
+    
+}
 
