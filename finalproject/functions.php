@@ -55,6 +55,27 @@ foreach($records as $record){
 }
 
 
+function displayCategories(){
+    
+    global $conn;
+
+$sql2="SELECT *  FROM `book_category2`";
+
+$stmt=$conn->prepare($sql2);
+$stmt->execute();
+$records=$stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//print_r($records);
+
+foreach($records as $record){
+    
+    echo "<option value='".$record["catId"]."'>" . $record["catName"] . "</option> " ; 
+    
+}
+    
+}
+
+
 
 
 function displayBooks(){
@@ -72,6 +93,15 @@ if  (  $_GET['submitBtn']=="set"  ){
   $namedParameters= array();
   
   $sql= "select * from bookInfo2 where 1";
+  
+  
+  
+    if(!empty($_GET['text'])){
+              $sql.=  " and bookTitle LIKE :bookTitle" ;
+            $namedParameters[":bookTitle"]= "%" . $_GET['text'] . "%";
+                
+    }
+  
   
   
   
@@ -97,7 +127,14 @@ if  (  $_GET['submitBtn']=="set"  ){
       
   }
   
-  
+  if  (  !empty($_GET['category'])  ){
+      //echo "publisher set";
+      
+     $sql.=  " and catId= :catId" ;
+     $namedParameters[":catId"]=  $_GET['category'] ;
+      
+      
+  }
   
   
                 $stmt=$conn->prepare($sql);

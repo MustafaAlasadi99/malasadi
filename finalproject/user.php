@@ -80,10 +80,10 @@
       
       
           <div class="form-group row">
-                <label for="example-search-input" class="col-2 col-form-label">Year:</label>
+                <label for="year" class="col-2 col-form-label">Year:</label>
                 
                 <div class="col-7">
-                        <select class="form-control" id="exampleSelect1" name="year">
+                        <select class="form-control" id="year" name="year">
                               <option value="">Select One </option>
                               <?=displayYears()?>
                             
@@ -92,7 +92,17 @@
           </div>
       
         
-        
+           <div class="form-group row">
+                <label for="category" class="col-2 col-form-label">Category:</label>
+                
+                <div class="col-7">
+                        <select class="form-control" id="category" name="category">
+                              <option value="">Select One </option>
+                              <?=displayCategories()?>
+                            
+                      </select>
+                </div>
+          </div>
         
       
       
@@ -100,7 +110,7 @@
       
 
             <div id="buttonContainer"> 
-              <button type="submit" class="btn btn-primary" value="set" name="submitBtn">Submit</button>
+              <button type="submit" class="btn btn-primary" value="set" name="submitBtn">Search</button>
             </div>
 
     </form>
