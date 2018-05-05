@@ -45,11 +45,16 @@ h2{
 }
 
 
-
-#table{
+@media (min-width:1281px) {
+    
+    #table{
     
     width:50%;
-    
-    
     margin: 0 auto;
 }
+    
+    
+}
+
+
+
