@@ -10,6 +10,10 @@ if(!isset( $_SESSION['adminName']))
 }
 
 
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -65,6 +69,75 @@ if(!isset( $_SESSION['adminName']))
     
     
     
+      <div class="container form_div2"> 
+  
+    <form name"myform"  >   
+     
+              <div class="form-group row">
+                <label for="title" class="col-3 col-form-label">Title:</label>
+                <div class="col-7">
+                  <input class="form-control" name="title" type="text" id="title">
+                </div>
+              </div>
+        
+           <div class="form-group row">
+                <label for="authorName" class="col-3 col-form-label">Author Name:</label>
+                <div class="col-7">
+                   <input class="form-control" name="authorName" type="text" id="authorName">
+                </div>
+              </div>
+
+           <div class="form-group row">
+                <label for="authorInfo" class="col-3 col-form-label">Author Information:</label>
+                <div class="col-7">
+                     <textarea class="form-control" id="authorInfo" rows="3" name="authorInfo"></textarea>
+                </div>
+              </div>
+  
+        
+        
+            <div class="form-group row">
+                <label for="authorName" class="col-3 col-form-label">Publisher:</label>
+                <div class="col-7">
+                   <input class="form-control" name="publisher" type="text" id="publisher">
+                </div>
+              </div>
+        
+           <div class="form-group row">
+                <label for="category" class="col-3 col-form-label">Category:</label>
+                
+                <div class="col-7">
+                        <select class="form-control" id="category" name="category">
+                              <option value="">Select One </option>
+                              <?=displayCategories()?>
+                            
+                      </select>
+                </div>
+          </div>
+        
+      
+      
+      
+      
+
+            <div id="buttonContainer"> 
+              <button type="submit" class="btn btn-primary" value="set" name="submitBtn">Add to collection</button>
+            </div>
+
+    </form>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 
@@ -79,5 +152,14 @@ if(!isset( $_SESSION['adminName']))
         
         
         <script src="js/functions.js"></script>
+        
+        
+        
+        
+      
+        
+        
+        
+        
 </body>
 </html>

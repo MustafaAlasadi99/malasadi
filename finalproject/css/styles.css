@@ -62,8 +62,25 @@ h2{
     
   .form_div{
     margin: 0 auto;
-    width:40% /* pc, adjusting form size  */
+    width:30% ;/* pc, adjusting form size  */
+ 
+     margin-left: 35%;
+     
+    
+   
 }
+
+.form_div2{
+    margin: 0 auto;
+    width:30% ;/* pc, adjusting form size  */
+ 
+     margin-left: 35%;
+     
+    
+   
+}
+
+
     
     
 }
