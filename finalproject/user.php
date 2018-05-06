@@ -48,12 +48,12 @@
       
   <div class="container form_div"> 
   
-    <form name"myform" >   
+    <form name"myform"  >   
      
               <div class="form-group row">
-                <label for="example-search-input" class="col-2 col-form-label">Title:</label>
+                <label for="title" class="col-2 col-form-label">Title:</label>
                 <div class="col-7">
-                  <input class="form-control" name="text" type="text" id="example-search-input">
+                  <input class="form-control" name="text" type="text" id="title">
                 </div>
               </div>
         

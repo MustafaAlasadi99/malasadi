@@ -163,3 +163,10 @@ Stack trace:
 [05-May-2018 06:48:48 UTC] PHP Fatal error:  Call to undefined function displayPublishers() in /home/ubuntu/workspace/malasadi/finalproject/user.php on line 59
 [05-May-2018 06:48:48 UTC] PHP Stack trace:
 [05-May-2018 06:48:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/user.php:0
+[06-May-2018 01:26:50 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/malasadi/finalproject/db.php:3) in /home/ubuntu/workspace/malasadi/finalproject/db.php on line 3
+[06-May-2018 01:26:50 UTC] PHP Stack trace:
+[06-May-2018 01:26:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/adminLogin.php:0
+[06-May-2018 01:26:50 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/adminLogin.php:12
+[06-May-2018 01:46:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/malasadi/finalproject/loginProcess.php on line 56
+[06-May-2018 01:46:17 UTC] PHP Stack trace:
+[06-May-2018 01:46:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/adminLogin.php:0

@@ -1,13 +1,14 @@
 <?php include('functions.php');
 
 
-if (isset($_POST['userName'])){
-  echo $_POST['userName'];
+
+
+
  
-  
-  
-  
-}
+      if (isset($_POST['userName']) &&  isset($_POST['password'])   )
+              include 'loginProcess.php';
+
+      
 
 
 
@@ -61,19 +62,29 @@ if (isset($_POST['userName'])){
          
       <h2>Administrator Login</h2>  <br/> <br/>
      
-            <form method="POST" >
+            <form method="POST" class="needs-validation" novalidate >
               <div class="form-group col-lg-4">
                 <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter Username" name="userName">
+                <input type="text" class="form-control" id="username" placeholder="Enter Username" name="userName" required>
+                 <div class="invalid-feedback" id="i">
+                  Please choose a username.
+                  </div>
               </div>
               <div class="form-group col-lg-4">
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter password" name="pwd" required>
+                <div class="invalid-feedback">
+                  Please Enter a Password.
+                  </div>
               </div>
                <br/>
               &nbsp; &nbsp; <button type="submit" class="btn btn-default">Login</button>
             </form>
       </div>
+
+
+
+
 
 
         <hr>
@@ -84,5 +95,41 @@ if (isset($_POST['userName'])){
                 <br /><img id="otter" src="img/otter.png" alt="CSUMB Logo" />
             </footer>
         </div>
+        
+        
+        
+        
+        
+        
+        
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
 </body>
 </html>

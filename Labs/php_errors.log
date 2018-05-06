@@ -119,3 +119,6 @@ Stack trace:
 [05-May-2018 18:01:38 UTC] PHP Stack trace:
 [05-May-2018 18:01:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/pets.php:0
 [05-May-2018 18:01:38 UTC] PHP   2. getAllPets() /home/ubuntu/workspace/malasadi/Labs/lab10/pets.php:71
+[06-May-2018 04:46:09 UTC] PHP Fatal error:  Call to undefined function getAllPets() in /home/ubuntu/workspace/malasadi/Labs/lab10/index.php on line 10
+[06-May-2018 04:46:09 UTC] PHP Stack trace:
+[06-May-2018 04:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/Labs/lab10/index.php:0
