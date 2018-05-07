@@ -24,7 +24,8 @@ $records=$stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($records as $record){
     
-    echo "<option value='".$record["publisher"]."'>" . $record["publisher"] . "</option> " ; 
+    if ($record["publisher"]!="")
+    echo "<option value='".$record["publisher"]."'  ";  if($_GET['publisher']==$record["publisher"] )echo"selected";     echo "  >" . $record["publisher"] . "</option> "   ;    
     
 }
 
@@ -47,8 +48,9 @@ $records=$stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($records as $record){
     
-    echo "<option value='".$record["yearPublished"]."'>" . $record["yearPublished"] . "</option> " ; 
-    
+    if ($record["yearPublished"]!="0")
+   // echo "<option value='".$record["yearPublished"]."'>" . $record["yearPublished"] . "</option> " ; 
+    echo "<option value='".$record["yearPublished"]."'  ";  if($_GET['year']==$record["yearPublished"] )echo"selected";     echo "  >" . $record["yearPublished"] . "</option> "   ; 
 }
 
 
@@ -69,8 +71,9 @@ $records=$stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($records as $record){
     
-    echo "<option value='".$record["catId"]."'>" . $record["catName"] . "</option> " ; 
-    
+    if ($record["catName"]!="")
+    //echo "<option value='".$record["catId"]."'>" . $record["catName"] . "</option> " ; 
+    echo "<option value='".$record["catId"]."'  ";  if($_GET['category']==$record["catId"] )echo"selected";     echo "  >" . $record["catName"] . "</option> "   ;  
 }
     
 }
@@ -137,6 +140,22 @@ if  (  $_GET['submitBtn']=="set"  ){
   }
   
   
+  ////////////////////////////////////
+   if  (  ($_GET['sort'])=="asc"  ){
+      
+      $sql.=  "   order by bookTitle" ;
+     
+  }
+  
+   if  (  ($_GET['sort'])=="desc"  ){
+      
+      $sql.=  "   order by bookTitle DESC" ;
+     
+  }
+  
+  
+  
+  
                 $stmt=$conn->prepare($sql);
                 $stmt->execute($namedParameters);
                 $records=$stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -150,25 +169,68 @@ if  (  $_GET['submitBtn']=="set"  ){
                    echo"<th scope='col'>Title</th>";
                    echo"<th scope='col'>Year Published</th>";
                    echo"<th scope='col'>Price</th>";
+                   echo"<th scope='col'></th>";
+                   echo"<th scope='col'></th>";
                  echo"</tr>";
                         echo"</thead>";
                   
               echo"<tbody>";
                    
                    
-               foreach($records as $record){
+     
+     
+    
+     
+             foreach($records as $record){   
     
                  echo "
                       <tr>
                       <th scope='row'> <img id='bookImg' src='" . $record['img']  .  "'  /> </th>
-                      <td>". $record['bookTitle'] ."</td>
-                      <td>". $record['yearPublished'] ."</td>
-                      <td>$". $record['pricePaid'] ."</td>
-                      </tr>
+                      <td>". $record['bookTitle'] ."</td>              ";
                       
-                      "  ;
-    
+                      echo "<td>"; if ($record['yearPublished']=="0"){echo ""; } else { echo $record['yearPublished'];}    echo "</td>";
+                      
+                      
+                      
+                      echo "<td>"; if ($record['pricePaid']=="0"){echo ""; } else {echo"$"; echo $record['pricePaid'];}    echo "</td>";
+                     
+                     
+                     if(isset( $_SESSION['adminName']))
+                            {
+                             echo"  <td>    <a href='edit.php?id=".$record['bookId']."      ' class='btn btn-secondary'>Edit</a>   </td>   ";
+                             
+                               echo"<td>";
+                               
+                                echo "<form name='deleteForm'  onsubmit='return confirmDelete()'>";
+                                echo "<input type='hidden' name='bookid' value= " . $record['bookId'] . " />";
+                                
+                                
+                                
+                                echo " <button type='submit' class='btn btn-danger'>Remove</button>   " ; 
+                                
+                                
+                                
+                                
+                                echo "</form>";
+                                echo"</td>";
+                             
+                            }
+                     
+                     
+              echo " </tr>";
+                      
+                     
+                      
             }
+     
+     
+                
+     
+     
+     
+     
+     
+     
                    
                 
                     
@@ -187,7 +249,15 @@ if  (  $_GET['submitBtn']=="set"  ){
 
 }
 
-}
+}  //end
+
+
+
+
+ 
+
+
+
 
 
 

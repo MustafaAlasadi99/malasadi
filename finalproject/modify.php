@@ -3,6 +3,30 @@
 
 
 
+session_start();
+if(!isset( $_SESSION['adminName']))
+{
+  header("Location:index.php");
+}
+
+if(isset( $_GET['bookid']))
+{
+  
+  global $conn;
+  
+  $sql = "DELETE FROM bookInfo2 WHERE bookId =  " . $_GET['bookid'];
+ $statement = $conn->prepare($sql);
+ $statement->execute();
+  
+  echo"<script>  alert('Book Deletetion was successful');   </script>";
+  
+  
+}
+
+   
+
+
+
 
 ?>
 
@@ -19,6 +43,19 @@
   
   
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  
+   <script>
+            
+            function confirmDelete() {
+                
+                return confirm("Are you sure you want to delete it?");
+                
+                
+                
+            }
+            
+        </script>
+  
 </head>
 
 
@@ -34,11 +71,15 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.php" style="font-size:1.5em;">Home</a>  
+        <a class="nav-link" href="admin.php" style="font-size:1.5em;">Home</a>  
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="adminLogin.php" style="font-size:1.5em;">Administrate</a>
+        <a class="nav-link" href="addBook.php" style="font-size:1.5em;">Insert</a>  
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php" style="font-size:1.5em;">Logout</a>  
+      </li>
+     
          
     </ul>
   </div>  
@@ -66,7 +107,7 @@
                 
                 <div class="col-7">
                         <select class="form-control" id="example-search-input" name="publisher">
-                              <option value=""             >Select One </option>
+                              <option value="">Select One </option>
                               <?=displayPublishers()?>
                               
                               
@@ -75,7 +116,7 @@
         </div>
       
       
-     
+      
       
       
       
@@ -103,26 +144,6 @@
                       </select>
                 </div>
           </div>
-          
-          
-          
-            <div class="form-group row">
-                <label for="sort" class="col-2 col-form-label">Sort By:</label>
-                
-                <div class="col-7">
-                        <select class="form-control" id="sort" name="sort">
-                              <option value="">Select One </option>
-                              <option value="asc" >Title A-Z </option>
-                              <option value="desc">Title Z-A </option>
-                            
-                      </select>
-                </div>
-          </div>
-          
-          
-          
-          
-          
         
       
       
@@ -147,11 +168,21 @@
     
 <br>
 
+ <!-- <h2>Welcome &nbsp; <?php //echo $_SESSION['adminName'] ?></h2> -->
  
- 
+    
+    
+    
+
     
     
     <?php displayBooks(); ?>
+    
+    
+    
+    
+    
+    
     
     
 
@@ -167,6 +198,13 @@
         
         <script src="js/functions.js"></script>
         
-     
+        
+        
+        
+      
+        
+        
+        
+        
 </body>
 </html>

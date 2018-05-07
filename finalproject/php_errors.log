@@ -1,0 +1,81 @@
+[07-May-2018 01:52:12 UTC] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:52:12 UTC] PHP Stack trace:
+[07-May-2018 01:52:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:52:12 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:52:12 UTC] PHP Stack trace:
+[07-May-2018 01:52:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:52:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 25
+[07-May-2018 01:52:12 UTC] PHP Stack trace:
+[07-May-2018 01:52:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:52:31 UTC] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:52:31 UTC] PHP Stack trace:
+[07-May-2018 01:52:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:52:31 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:52:31 UTC] PHP Stack trace:
+[07-May-2018 01:52:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:52:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 25
+[07-May-2018 01:52:31 UTC] PHP Stack trace:
+[07-May-2018 01:52:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:55:07 UTC] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:55:07 UTC] PHP Stack trace:
+[07-May-2018 01:55:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:55:07 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:55:07 UTC] PHP Stack trace:
+[07-May-2018 01:55:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:55:07 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 25
+[07-May-2018 01:55:07 UTC] PHP Stack trace:
+[07-May-2018 01:55:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:55:19 UTC] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:55:19 UTC] PHP Stack trace:
+[07-May-2018 01:55:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:55:19 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 3
+[07-May-2018 01:55:19 UTC] PHP Stack trace:
+[07-May-2018 01:55:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:55:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 25
+[07-May-2018 01:55:19 UTC] PHP Stack trace:
+[07-May-2018 01:55:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:34 UTC] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/finalproject/api/functions.php on line 3
+[07-May-2018 01:57:34 UTC] PHP Stack trace:
+[07-May-2018 01:57:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:34 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:3
+[07-May-2018 01:57:34 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/finalproject/api/functions.php on line 3
+[07-May-2018 01:57:34 UTC] PHP Stack trace:
+[07-May-2018 01:57:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:34 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:3
+[07-May-2018 01:57:34 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/finalproject/api/functions.php on line 5
+[07-May-2018 01:57:34 UTC] PHP Stack trace:
+[07-May-2018 01:57:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:34 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:3
+[07-May-2018 01:57:40 UTC] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/malasadi/finalproject/api/functions.php on line 3
+[07-May-2018 01:57:40 UTC] PHP Stack trace:
+[07-May-2018 01:57:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:40 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:3
+[07-May-2018 01:57:40 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/malasadi/finalproject/api/functions.php on line 3
+[07-May-2018 01:57:40 UTC] PHP Stack trace:
+[07-May-2018 01:57:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:40 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:3
+[07-May-2018 01:57:40 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/malasadi/finalproject/api/functions.php on line 5
+[07-May-2018 01:57:40 UTC] PHP Stack trace:
+[07-May-2018 01:57:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 01:57:40 UTC] PHP   2. include() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:3
+[07-May-2018 02:01:49 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 27
+[07-May-2018 02:01:49 UTC] PHP Stack trace:
+[07-May-2018 02:01:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 02:01:57 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 27
+[07-May-2018 02:01:57 UTC] PHP Stack trace:
+[07-May-2018 02:01:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 02:03:15 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 27
+[07-May-2018 02:03:15 UTC] PHP Stack trace:
+[07-May-2018 02:03:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 02:05:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 29
+[07-May-2018 02:05:19 UTC] PHP Stack trace:
+[07-May-2018 02:05:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 02:05:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 29
+[07-May-2018 02:05:22 UTC] PHP Stack trace:
+[07-May-2018 02:05:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 02:06:33 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 29
+[07-May-2018 02:06:33 UTC] PHP Stack trace:
+[07-May-2018 02:06:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0
+[07-May-2018 02:07:27 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/malasadi/finalproject/api/report.php on line 29
+[07-May-2018 02:07:27 UTC] PHP Stack trace:
+[07-May-2018 02:07:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/malasadi/finalproject/api/report.php:0

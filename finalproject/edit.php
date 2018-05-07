@@ -10,11 +10,26 @@ if(!isset( $_SESSION['adminName']))
 }
 
 
+ function getCategories($catId) {
+    global $conn;
+    
+    $sql = "SELECT *  FROM `book_category2` ";
+    
+    $statement = $conn->prepare($sql);
+    $statement->execute();
+    $records = $statement->fetchAll(PDO::FETCH_ASSOC);
+    foreach ($records as $record) {
+        echo "<option  ";
+        echo ($record["catId"] == $catId)? "selected": ""; 
+        echo " value='".$record["catId"] ."'>". $record['catName'] ." </option>";
+    }
+}
 
 
-global $conn;
 
 if (isset($_GET['submitBtn']) &&   !empty($_GET['title'])   ) {
+    
+    /*
     $bookTitle = $_GET['title'];
     $authorName = $_GET['authorName'];
     
@@ -24,13 +39,24 @@ if (isset($_GET['submitBtn']) &&   !empty($_GET['title'])   ) {
     $Price = $_GET['Bprice'];
     $category = $_GET['Bcategory'];
     $img= $_GET['Bimg'];
+    $bookId= $_GET['id'];
     
+    echo"dasdasd";
     
-    
-    
-    $sql = "INSERT INTO bookInfo2
-            ( `bookTitle`, `authorName` , `authorInfo` , `publisher` , `yearPublished`, `pricePaid` , `catId` , `img`    ) 
-             VALUES ( :title, :authorName, :authorInfo,  :Bpublisher , :Byear , :Bprice , :Bcategory , :Bimg     )";
+     $sql = "UPDATE bookInfo2
+                SET bookTitle = :title,
+                    authorName = :authorName,
+                    authorInfo = :authorInfo,
+                    publisher = :Bpublisher,
+                    yearPublished = :Byear,
+                    pricePaid = :Bprice,
+                    catId = :Bcategory,
+                    img = :Bimg
+                    
+                    
+                    
+                    
+                WHERE bookId = :bookId";
     
     $namedParameters = array();
     $namedParameters[':title'] = $bookTitle;
@@ -42,19 +68,59 @@ if (isset($_GET['submitBtn']) &&   !empty($_GET['title'])   ) {
     $namedParameters[':Bprice'] = $Price;
     $namedParameters[':Bcategory'] = $category;
     $namedParameters[':Bimg'] = $img;
-    
+    $namedParameters[':bookId'] = $bookId;
     
     
      $statement = $conn->prepare($sql);
     $statement->execute($namedParameters);
     
     
+    */
     
-echo '<script type="text/javascript">'; 
-echo 'alert("Book Was Successfuly Added");'; 
-echo 'window.location.href = "admin.php";';
-echo '</script>';
     
+    
+    
+    global $conn;
+    
+    
+      $sql = "UPDATE bookInfo2
+                SET bookTitle = :title,
+                authorName    = :name ,
+                authorInfo    = :authorInfo,
+                publisher     = :publisher,
+                yearPublished = :year,
+                pricePaid     = :price,
+                catId         =  :catid          ,
+                img           =  :img          
+                
+                            
+                
+                
+                WHERE bookId = :id";
+      
+        $np = array();
+        $np[":title"] = $_GET['title'];
+        $np[":name"] = $_GET['authorName'];
+        $np[":authorInfo"] = $_GET['authorInfo'];
+        $np[":publisher"] = $_GET['Bpublisher'];
+        $np[":year"] = $_GET['Byear'];
+        $np[":price"] = $_GET['Bprice'];
+        $np[":catid"] = $_GET['Bcategory'];
+        $np[":img"] = $_GET['Bimg'];
+        
+        
+        
+        $np[":id"] = $_GET['id'];
+        
+        
+        
+      
+                
+        $statement = $conn->prepare($sql);
+        $statement->execute($np);  
+        
+        
+        
 }
 
 
@@ -62,7 +128,21 @@ echo '</script>';
 
 
 
-
+    if(isset ($_GET['id']))
+    {
+       global $conn;
+       
+       $sql2 = "SELECT * FROM bookInfo2 WHERE bookId = " . $_GET['id'];
+       
+       $statement = $conn->prepare($sql2);
+        $statement->execute();
+        $books = $statement->fetch(PDO::FETCH_ASSOC);
+        
+        
+   // echo $_GET['id'];
+       
+       
+    }
 
 
 
@@ -98,7 +178,9 @@ echo '</script>';
       <li class="nav-item">
         <a class="nav-link" href="admin.php" style="font-size:1.5em;">Home</a>  
       </li>
-      
+      <li class="nav-item">
+        <a class="nav-link" href="modify.php" style="font-size:1.5em;">Modify</a>  
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php" style="font-size:1.5em;">Logout</a>  
       </li>
@@ -124,25 +206,25 @@ echo '</script>';
       <div class="container form_div2"> 
   
     <form name"myform"  >   
-     
+     <input type="hidden" name="id" value= "<?=$books['bookId']?>"/>
               <div class="form-group row">
                 <label for="Btitle" class="col-3 col-form-label">Title:</label>
                 <div class="col-7">
-                  <input class="form-control" name="title" type="text" id="Btitle">
+                  <input class="form-control" name="title" type="text" id="Btitle" value= "<?=$books['bookTitle']?>" >
                 </div>
               </div>
         
            <div class="form-group row">
                 <label for="authorName" class="col-3 col-form-label">Author Name:</label>
                 <div class="col-7">
-                   <input class="form-control" name="authorName" type="text" id="authorName">
+                   <input class="form-control" name="authorName" type="text" id="authorName" value= "<?=$books['authorName']?>">
                 </div>
               </div>
 
            <div class="form-group row">
                 <label for="authorInfo" class="col-3 col-form-label">Author Information:</label>
                 <div class="col-7">
-                     <textarea class="form-control" id="authorInfo" rows="3" name="authorInfo"></textarea>
+                     <textarea class="form-control" id="authorInfo" rows="3" name="authorInfo" ><?=$books['authorInfo']?></textarea>
                 </div>
               </div>
   
@@ -151,7 +233,7 @@ echo '</script>';
             <div class="form-group row">
                 <label for="Bpublisher" class="col-3 col-form-label">Publisher:</label>
                 <div class="col-7">
-                   <input class="form-control" name="Bpublisher" type="text" id="Bpublisher">
+                   <input class="form-control" name="Bpublisher" type="text" id="Bpublisher" value= "<?=$books['publisher']?>">
                 </div>
               </div>
               
@@ -159,7 +241,7 @@ echo '</script>';
             <div class="form-group row">
                 <label for="Byear" class="col-3 col-form-label">Year Published:</label>
                 <div class="col-7">
-                   <input class="form-control" name="Byear" type="text" id="Byear">
+                   <input class="form-control" name="Byear" type="text" id="Byear" value= "<?=$books['yearPublished']?>">
                 </div>
               </div>  
               
@@ -167,14 +249,14 @@ echo '</script>';
               <div class="form-group row">
                 <label for="Bprice" class="col-3 col-form-label">Price:</label>
                 <div class="col-7">
-                   <input class="form-control" name="Bprice" type="text" id="Bprice">
+                   <input class="form-control" name="Bprice" type="text" id="Bprice" value= "<?=$books['pricePaid']?>">
                 </div>
               </div>
               
               <div class="form-group row">
                 <label for="Bimg" class="col-3 col-form-label">Set Image Url:</label>
                 <div class="col-7">
-                   <input class="form-control" name="Bimg" type="text" id="Bimg">
+                   <input class="form-control" name="Bimg" type="text" id="Bimg" value= "<?=$books['img']?>">
                 </div>
               </div>
               
@@ -187,7 +269,7 @@ echo '</script>';
                 <div class="col-7">
                         <select class="form-control" id="Bcategory" name="Bcategory">
                               <option value="">Select One </option>
-                              <?=displayCategories()?>
+                              <?php getCategories( $books['catId'] ); ?>
                             
                       </select>
                 </div>
@@ -199,7 +281,7 @@ echo '</script>';
       
 
             <div id="buttonContainer"> 
-              <button type="submit" class="btn btn-primary" value="set" name="submitBtn">Add to collection</button>
+              <button type="submit" class="btn btn-primary" value="set" name="submitBtn">Save</button>
             </div>
 
     </form>

@@ -28,7 +28,7 @@ if(!isset( $_SESSION['adminName']))
 </head>
 
 
-<body>
+<body id="adminBody">
 
 
 
@@ -45,6 +45,15 @@ if(!isset( $_SESSION['adminName']))
       <li class="nav-item">
         <a class="nav-link" href="addBook.php" style="font-size:1.5em;">Insert</a>  
       </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="modify.php" style="font-size:1.5em;">Modify</a>  
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="reports.php" style="font-size:1.5em;">Reports</a>  
+      </li>
+      
       <li class="nav-item">
         <a class="nav-link" href="index.php" style="font-size:1.5em;">Logout</a>  
       </li>

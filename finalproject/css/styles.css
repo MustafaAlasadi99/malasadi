@@ -61,7 +61,7 @@ h2{
 @media (min-width:1281px) {  
     
   .form_div{
-    margin: 0 auto;
+    
     width:30% ;/* pc, adjusting form size  */
  
      margin-left: 35%;
@@ -95,3 +95,44 @@ input {
     
     margin: 0 auto;
 }
+
+
+#reportMain{
+    
+    
+    margin: 0 auto;
+    
+    text-align: center;
+    
+}
+
+
+#report{
+    
+    font-size: 2em;
+}
+
+html,body{
+    
+     
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body{
+    
+      background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/books-images-background-hd-1.jpg");
+    background-repeat: repeat-x;
+    background-size:contain;
+     background-size:100%;
+    
+background-position:center;
+
+font-size: 1em;
+
+}
+
+
