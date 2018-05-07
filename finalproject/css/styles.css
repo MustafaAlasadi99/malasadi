@@ -32,11 +32,7 @@ h2{
     max-width: 100%;
     height: auto;
 }
-    body{
-      max-width: 100%;
-      height: auto;
-    
-}
+   
     
 }
 
@@ -48,11 +44,7 @@ h2{
 
 
 
-body{
-      max-width: 100%;
-      height: auto;
-    
-}
+
 
 
 
@@ -97,6 +89,17 @@ body{
 
 
     
+    body{
+      background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/books-images-background-hd-1.jpg");
+      background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    
+    
+    
     
 }
 
@@ -127,21 +130,11 @@ body{
     font-size: 2em;
 }
 
-html,body{
-    background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-  
-}
+
 
 body{
     
-      background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/books-images-background-hd-1.jpg");
-      background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+    
 
 font-size: 1em;
 
