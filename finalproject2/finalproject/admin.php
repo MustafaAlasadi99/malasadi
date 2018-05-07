@@ -1,3 +1,17 @@
+<?php include('functions.php');
+
+
+
+
+session_start();
+if(!isset( $_SESSION['adminName']))
+{
+  header("Location:index.php");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +25,10 @@
   
   
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <link href="css/styles2.css" rel="stylesheet" type="text/css" />
 </head>
 
 
-<body>
+<body id="adminBody">
 
 
 
@@ -27,34 +40,44 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.php" style="font-size:1.5em;">Home</a>
+        <a class="nav-link" href="admin.php" style="font-size:1.5em;">Home</a>  
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="adminLogin.php" style="font-size:1.5em;" >Administrate</a>
+        <a class="nav-link" href="addBook.php" style="font-size:1.5em;">Insert</a>  
       </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="modify.php" style="font-size:1.5em;">Modify</a>  
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="reports.php" style="font-size:1.5em;">Reports</a>  
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="index.php" style="font-size:1.5em;">Logout</a>  
+      </li>
+     
          
     </ul>
   </div>  
 </nav>
-<br>
-       
-         
-            
-              <button class="btn btn-primary btn-block" onclick="myFunction()" id="button">Show Collection</button>
-            
-         
-      
-      
-      
-      
-      
 
-      
-      
-      
-      
-      
-      
+
+    
+    
+    
+    
+    
+<br>
+
+ <!-- <h2>Welcome &nbsp; <?php //echo $_SESSION['adminName'] ?></h2> -->
+ 
+    
+    
+    
+    
+    
 
         <hr>
         <div id="footer">

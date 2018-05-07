@@ -33,15 +33,7 @@ h2{
     height: auto;
 }
   
-     body{
-      background-image: url("http://www.uniwallpaper.com/static/images/hd-wallpapers-android-mobile-6.jpg");
-      background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-        
-        
-    }
+    
     
 }
 
@@ -98,16 +90,15 @@ h2{
 
 
     
-     
+    body{
+      background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Phone-wallpapers-hd-tumblr-best-PIC-WPE001945.jpg");
+      background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
     
-    body {
-  
     
-    font-size: 1.0em;
-    
-    color:white;
-     background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/05/Book-wallpaper-pictures-hd-wallpapers.jpg");
-}
     
     
     
@@ -142,7 +133,13 @@ h2{
 
 
 
+body{
+    
+    
 
+font-size: 1em;
+
+}
 
 
 #labelWidth{
@@ -153,5 +150,6 @@ h2{
   
     
 }
+
 
 

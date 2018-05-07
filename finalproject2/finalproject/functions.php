@@ -162,7 +162,7 @@ if  (  $_GET['submitBtn']=="set"  ){
   
   echo "<div id ='table'>";  
      
-      echo " <table class='table table-hover table-dark'>";
+      echo " <table class='table table-hover table-light'>";
                     echo"<thead>";
                  echo"<tr>";
                    echo"<th scope='col'>Image</th>";

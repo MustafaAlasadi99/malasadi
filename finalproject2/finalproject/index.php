@@ -11,7 +11,6 @@
   
   
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <link href="css/styles2.css" rel="stylesheet" type="text/css" />
 </head>
 
 
