@@ -34,7 +34,7 @@ h2{
 }
   
      body{
-       background-image: url("../img/1.jpg");
+       background-image: url("../project.jpg");
      
         background-repeat: no-repeat;
 background-position: center center;
@@ -53,7 +53,7 @@ background-size: cover;
 
 
  body{
-      background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/05/Book-wallpaper-pictures-hd-wallpapers.jpg");
+      background-image: url("../project.jpg");
         
         
     }
@@ -101,7 +101,14 @@ background-size: cover;
 }
 
 
+     body {
+  
     
+    font-size: 1.0em;
+    
+    background-color: red;
+     background-image: url("../project.jpg");
+}
      
     
    
@@ -152,11 +159,3 @@ background-size: cover;
 }
 
 
- body {
-  
-    
-    font-size: 1.0em;
-    
-    background-color: red;
-     background-image: url("../img/1.jpg");
-}
