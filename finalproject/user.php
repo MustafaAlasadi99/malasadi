@@ -61,16 +61,18 @@
 
       
       
-        <div class="form-group row">
+        <div class="form-group row ">
                 
-               <span> <label for="example-search-input" class="col-2 col-form-label">Publisher:</label> </span>
+                
+                   <label for="example-search-input" class="col-2 col-form-label">Publisher:</label>
+                
+                
                 <div class="col-7">
-                  
+                
                         <select class="form-control" id="example-search-input" name="publisher">
                               <option value=""             >Select One </option>
                               <?=displayPublishers()?>
-                              
-                              
+                      
                       </select>
                 </div>
         </div>
@@ -81,8 +83,12 @@
       
       
           <div class="form-group row">
-                <label for="year" class="col-2 col-form-label">Year:</label>
-                
+            
+              
+                <label for="year" class="col-2 col-form-label">Year:</label>    
+             
+              
+              
                 <div class="col-7">
                         <select class="form-control" id="year" name="year">
                               <option value="">Select One </option>

@@ -32,7 +32,10 @@ h2{
     max-width: 100%;
     height: auto;
 }
-   
+   body{
+    background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Phone-wallpapers-hd-tumblr-best-PIC-WPE001945.jpg");
+   }
+    
     
 }
 
@@ -140,4 +143,13 @@ font-size: 1em;
 
 }
 
+
+#labelWidth{
+    
+    
+    margin:0px;
+   
+  
+    
+}
 
