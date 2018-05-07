@@ -32,7 +32,11 @@ h2{
     max-width: 100%;
     height: auto;
 }
+    body{
+      max-width: 100%;
+      height: auto;
     
+}
     
 }
 
@@ -41,6 +45,17 @@ h2{
       max-width: 100%;
       height: auto;
 }
+
+
+
+body{
+      max-width: 100%;
+      height: auto;
+    
+}
+
+
+
    
 }
 
@@ -85,9 +100,9 @@ h2{
     
 }
 
-input {
-   max-width: 100%; 
-}
+
+
+
 
 #buttonContainer{
     
