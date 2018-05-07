@@ -34,7 +34,7 @@ h2{
 }
   
      body{
-       background-image: url("../project.jpg");
+       background-image: url("../img/1.jpg");
      
         background-repeat: no-repeat;
 background-position: center center;
@@ -53,9 +53,12 @@ background-size: cover;
 
 
  body{
-      background-image: url("../project.jpg");
+      background-image: url("../img/1.jpg");
         
-        
+           background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
     }
 
 
