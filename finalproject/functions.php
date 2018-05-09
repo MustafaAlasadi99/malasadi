@@ -38,7 +38,7 @@ function displayYears(){
     
 global $conn;
 
-$sql="SELECT DISTINCT yearPublished FROM `bookInfo2`  ";
+$sql="SELECT DISTINCT yearPublished FROM `bookInfo2` order by yearPublished  ";
 
 $stmt=$conn->prepare($sql);
 $stmt->execute();

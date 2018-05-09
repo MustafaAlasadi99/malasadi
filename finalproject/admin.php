@@ -64,9 +64,9 @@ if(!isset( $_SESSION['adminName']))
 </nav>
 
 
+    <br>
     
-    
-    
+    <h1 align="center">Adminidstrator</h1></h1>
     
     
 <br>

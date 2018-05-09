@@ -39,11 +39,11 @@
 <br>
        
          
-            
-              <button class="btn btn-primary btn-block" onclick="myFunction()" id="button">Show Collection</button>
-            
+              <div id="btnDiv"> 
+              <button  class="btn btn-primary btn-block" onclick="myFunction()" id="button" >Go To Collection</button>
+              </div>
          
-      
+              <br> <br>
       
       
       

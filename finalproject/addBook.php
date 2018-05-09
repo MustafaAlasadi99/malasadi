@@ -98,7 +98,13 @@ echo '</script>';
       <li class="nav-item">
         <a class="nav-link" href="admin.php" style="font-size:1.5em;">Home</a>  
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="admin.php" style="font-size:1.5em;">Repoty</a></a>  
+      </li>
       
+       <li class="nav-item">
+        <a class="nav-link" href="modiphy.php" style="font-size:1.5em;">MODIFY</a>  
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php" style="font-size:1.5em;">Logout</a>  
       </li>

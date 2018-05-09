@@ -51,7 +51,10 @@
     <form name"myform"  >   
      
               <div class="form-group row">
-                <label for="title" class="col-2 col-form-label">Title:</label>
+                
+                <label for="title" class="col-2 col-form-label">Title: </label>
+                
+                
                 <div class="col-7">
                   <input class="form-control" name="text" type="text" id="title">
                 </div>
@@ -63,9 +66,9 @@
       
         <div class="form-group row ">
                 
-                
+                     
                    <label for="example-search-input" class="col-2 col-form-label">Publisher:</label>
-                
+                   
                 
                 <div class="col-7">
                 
@@ -84,9 +87,9 @@
       
           <div class="form-group row">
             
-              
+               
                 <label for="year" class="col-2 col-form-label">Year:</label>    
-             
+              
               
               
                 <div class="col-7">
@@ -100,7 +103,9 @@
       
         
            <div class="form-group row">
+                 
                 <label for="category" class="col-2 col-form-label">Category:</label>
+                
                 
                 <div class="col-7">
                         <select class="form-control" id="category" name="category">
@@ -114,8 +119,10 @@
           
           
             <div class="form-group row">
+                 
                 <label for="sort" class="col-2 col-form-label">Sort By:</label>
-                
+                 
+                 
                 <div class="col-7">
                         <select class="form-control" id="sort" name="sort">
                               <option value="">Select One </option>
